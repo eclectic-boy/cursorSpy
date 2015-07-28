@@ -13,7 +13,7 @@ The reference system is centered in the transform origin of the *spyObject* and 
 ```html    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/cursorSpy.min.js"></script>
+<script type="text/javascript" src="js/cursorSpy.js"></script>
 
 <script type="text/javascript">
 $(function() {
@@ -81,3 +81,16 @@ $("#spy").cursorSpy("stop");
 #Tips
 
 The default transform origin for the *spyObject* is its centroid, for changing it you can use the CSS3 directive [`transform-origin`](http://www.w3schools.com/cssref/css3_pr_transform-origin.asp).
+
+
+#Examples
+
+Base implementation [https://jsfiddle.net/eclectic_boy/ezLmvv8c/](https://jsfiddle.net/eclectic_boy/ezLmvv8c/).
+
+`head` [https://jsfiddle.net/eclectic_boy/y56o0hor/](https://jsfiddle.net/eclectic_boy/y56o0hor/).
+
+`max` and `min` [https://jsfiddle.net/eclectic_boy/cvz3mqjy/](https://jsfiddle.net/eclectic_boy/cvz3mqjy/).
+
+`step` function [https://jsfiddle.net/eclectic_boy/3cd6d9w0/](https://jsfiddle.net/eclectic_boy/3cd6d9w0/).
+
+Multiple [https://jsfiddle.net/eclectic_boy/82m1bLw6/](https://jsfiddle.net/eclectic_boy/82m1bLw6/).
