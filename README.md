@@ -2,6 +2,7 @@
 
 *cursorSpy* is a [jQuery widget](https://learn.jquery.com/plugins/stateful-plugins-with-widget-factory/) that can make able every DOM object (*spyObject*) to follow the cursor by rotating around its transform origin.
 
+See the base example here [https://jsfiddle.net/eclectic_boy/ezLmvv8c/](https://jsfiddle.net/eclectic_boy/ezLmvv8c/).
 
 ##Notes
 
@@ -29,13 +30,19 @@ $(function() {
 An optional options object `opts` can be passed to the widget. Here follow the available options:
 
 ##`head`##
-The angle of the head of the *spyObject* (i.e. the part of the *spyObject* that will follow the cursor). Default to 0 (=top);
+The angle of the head of the *spyObject* (i.e. the part of the *spyObject* that will follow the cursor). Default to 0 (=top).
+
+[https://jsfiddle.net/eclectic_boy/y56o0hor/](https://jsfiddle.net/eclectic_boy/y56o0hor/).
 
 ##`min`##
-The minimun angle (based on to the position of the cursor) below which the *spyObject* stops following the cursor. Default to `null`. `max` must be defined. Optional;
+The minimun angle (based on to the position of the cursor) below which the *spyObject* stops following the cursor. Default to `null`. `max` must be defined. Optional.
+
+[https://jsfiddle.net/eclectic_boy/cvz3mqjy/](https://jsfiddle.net/eclectic_boy/cvz3mqjy/).
 
 ##`max`##
-The maximum angle (based on to the position of the cursor) above which the *spyObject* stops following the cursor. Default to `null`. `min` must be defined. Optional;
+The maximum angle (based on to the position of the cursor) above which the *spyObject* stops following the cursor. Default to `null`. `min` must be defined. Optional.
+
+[https://jsfiddle.net/eclectic_boy/cvz3mqjy/](https://jsfiddle.net/eclectic_boy/cvz3mqjy/).
 
 ##`step(me, deg)`##
 A function which is called at every step (i.e. every time the *spyObject* moves). Optional.
@@ -62,6 +69,9 @@ In order to obtain the same `deg` angle but started from the head (if defined) y
 deg_relative = deg + me.options.head;
 ```
 
+[https://jsfiddle.net/eclectic_boy/3cd6d9w0/](https://jsfiddle.net/eclectic_boy/3cd6d9w0/).
+
+
 #Methods
 
 ##`start`##
@@ -85,17 +95,5 @@ The default transform origin for the *spyObject* is its centroid, for changing i
 
 #Examples
 
-Base implementation  
-[https://jsfiddle.net/eclectic_boy/ezLmvv8c/](https://jsfiddle.net/eclectic_boy/ezLmvv8c/).
-
-`head` option  
-[https://jsfiddle.net/eclectic_boy/y56o0hor/](https://jsfiddle.net/eclectic_boy/y56o0hor/).
-
-`max` and `min` options  
-[https://jsfiddle.net/eclectic_boy/cvz3mqjy/](https://jsfiddle.net/eclectic_boy/cvz3mqjy/).
-
-`step` function  
-[https://jsfiddle.net/eclectic_boy/3cd6d9w0/](https://jsfiddle.net/eclectic_boy/3cd6d9w0/).
-
-Multiple  
-[https://jsfiddle.net/eclectic_boy/82m1bLw6/](https://jsfiddle.net/eclectic_boy/82m1bLw6/).
+An example with multiple spyObjects  
+[https://jsfiddle.net/eclectic_boy/82m1bLw6/](https://jsfiddle.net/eclectic_boy/82m1bLw6/)
