@@ -85,12 +85,17 @@ The default transform origin for the *spyObject* is its centroid, for changing i
 
 #Examples
 
-Base implementation [https://jsfiddle.net/eclectic_boy/ezLmvv8c/](https://jsfiddle.net/eclectic_boy/ezLmvv8c/).
+Base implementation  
+[https://jsfiddle.net/eclectic_boy/ezLmvv8c/](https://jsfiddle.net/eclectic_boy/ezLmvv8c/).
 
-`head` [https://jsfiddle.net/eclectic_boy/y56o0hor/](https://jsfiddle.net/eclectic_boy/y56o0hor/).
+`head` option  
+[https://jsfiddle.net/eclectic_boy/y56o0hor/](https://jsfiddle.net/eclectic_boy/y56o0hor/).
 
-`max` and `min` [https://jsfiddle.net/eclectic_boy/cvz3mqjy/](https://jsfiddle.net/eclectic_boy/cvz3mqjy/).
+`max` and `min` options  
+[https://jsfiddle.net/eclectic_boy/cvz3mqjy/](https://jsfiddle.net/eclectic_boy/cvz3mqjy/).
 
-`step` function [https://jsfiddle.net/eclectic_boy/3cd6d9w0/](https://jsfiddle.net/eclectic_boy/3cd6d9w0/).
+`step` function  
+[https://jsfiddle.net/eclectic_boy/3cd6d9w0/](https://jsfiddle.net/eclectic_boy/3cd6d9w0/).
 
-Multiple [https://jsfiddle.net/eclectic_boy/82m1bLw6/](https://jsfiddle.net/eclectic_boy/82m1bLw6/).
+Multiple  
+[https://jsfiddle.net/eclectic_boy/82m1bLw6/](https://jsfiddle.net/eclectic_boy/82m1bLw6/).
