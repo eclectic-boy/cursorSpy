@@ -2,7 +2,14 @@
 
 *cursorSpy* is a [jQuery widget](https://learn.jquery.com/plugins/stateful-plugins-with-widget-factory/) that can make able every DOM object (*spyObject*) to follow the cursor by rotating around its transform origin.
 
-See the base example here [https://jsfiddle.net/eclectic_boy/ezLmvv8c/](https://jsfiddle.net/eclectic_boy/ezLmvv8c/).
+
+##Examples
+
+A base test:
+[https://jsfiddle.net/eclectic_boy/ezLmvv8c/](https://jsfiddle.net/eclectic_boy/ezLmvv8c/).
+
+A test with multiple spyObjects:
+[https://jsfiddle.net/eclectic_boy/82m1bLw6/](https://jsfiddle.net/eclectic_boy/82m1bLw6/)
 
 ##Notes
 
@@ -91,9 +98,3 @@ $("#spy").cursorSpy("stop");
 #Tips
 
 The default transform origin for the *spyObject* is its centroid, for changing it you can use the CSS3 directive [`transform-origin`](http://www.w3schools.com/cssref/css3_pr_transform-origin.asp).
-
-
-#Examples
-
-An example with multiple spyObjects  
-[https://jsfiddle.net/eclectic_boy/82m1bLw6/](https://jsfiddle.net/eclectic_boy/82m1bLw6/)
