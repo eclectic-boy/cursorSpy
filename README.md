@@ -53,10 +53,12 @@ The minimun angle (based on to the position of the cursor) below which the *spyO
 ###`max`
 The maximum angle (based on to the position of the cursor) above which the *spyObject* stops following the cursor. Default to `null`. `min` must be defined. Optional.
 
-[https://jsfiddle.net/eclectic_boy/76qu4o51/](https://jsfiddle.net/eclectic_boy/76qu4o51/).
+[https://jsfiddle.net/eclectic_boy/cvz3mqjy/](https://jsfiddle.net/eclectic_boy/cvz3mqjy/).
 
 ###`rotationCenterX`
 The x coordinate of the rotation center for the *spyObject* relative to the object itself. It is the distance from the left border expressed in percentage of the width. Default to `50`. Optional.
+
+[https://jsfiddle.net/eclectic_boy/76qu4o51/](https://jsfiddle.net/eclectic_boy/76qu4o51/).
 
 ###`rotationCenterY`
 The y coordinate of the rotation center for the *spyObject* relative to the object itself. It is the distance from the top border expressed in percentage of the height. Default to `50`. Optional.
