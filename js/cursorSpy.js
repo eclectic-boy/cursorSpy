@@ -4,16 +4,21 @@
 	 
 		options: {
 			isActive: true,
-			head: 0,
-			min: null,
-			max: null,
-			step: function(me, deg) {
+			head: 0,//°
+			min: null,//°
+			max: null,//°
+			rotationCenterX: 50,//%
+			rotationCenterY: 50,//%
+			step: function(me, deg, distance) {
 				//me = widget
 				//deg = angle for this step (real CSS value for rotation)
+				//distance = distance of the cursor from the transform origin in pixels
 				//deg + me.options.head = angle for this step (computed angle related to the head -if defined-)
 				//return false to prevent rotation for this step
 				return deg;
 			},
+			centerX: null,//transform origin X related to the screen
+			centerY: null,//transform origin Y related to the screen
 		},
 
 		_create: function() {
@@ -23,15 +28,30 @@
 				.css("display", "block")
 				.css("position", "relative");
 
+			//set transform origin
+			var torigin = me.options.rotationCenterX + "% " + me.options.rotationCenterY + "%";
+			me.element
+				.css("-ms-transform-origin", torigin)
+				.css("-webkit-transform-origin", torigin)
+				.css("transform-origin", torigin);
+			console.log(torigin);
+
+			//converts transform origin from % to px
+			var width = me.element.width();
+			var height = me.element.height();
+			var rotationCenterX_px = width * me.options.rotationCenterX / 100;
+			var rotationCenterY_px = height * me.options.rotationCenterY / 100;
+
+			//computes rotation angle
+			var offset = me.element.offset();
+			me.options.centerX = offset.left + rotationCenterX_px;
+			me.options.centerY = offset.top + rotationCenterY_px;
+
+			
 			$(document).on("mousemove", function(event) {
 				if(me.options.isActive) {
-					var offset = me.element.offset();
-					var width = me.element.width();
-					var height = me.element.height();
-					var centerX = offset.left + (width / 2);
-					var centerY = offset.top + (height / 2);
-					var dx = event.pageX-centerX;
-					var dy = event.pageY-centerY;
+					var dx = event.pageX-me.options.centerX;
+					var dy = event.pageY-me.options.centerY;
 					var rad = Math.atan((dy)/(dx)) - Math.PI;
 					if(dx < 0) {
 						rad += Math.PI;
@@ -45,7 +65,8 @@
 					}
 
 					if(me.options.step) {
-						deg = me.options.step(me, deg);
+						var distance = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
+						deg = me.options.step(me, deg, distance);
 
 						if(deg == false) {
 							return false;
