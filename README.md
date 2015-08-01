@@ -115,7 +115,8 @@ $("#spy").cursorSpy("stop");
 ###v1.1
 
  - Debug of transform origin computation;
- - Added options `rotationCenterX` and `rotationCenterY`.
+ - Added options `rotationCenterX` and `rotationCenterY`;
+ - in `step` function added `distance` argument.
 
 ###v1.0
 First release
