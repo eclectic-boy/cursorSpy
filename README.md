@@ -11,6 +11,10 @@ A base test:
 A test with multiple spyObjects:
 [https://jsfiddle.net/eclectic_boy/82m1bLw6/](https://jsfiddle.net/eclectic_boy/82m1bLw6/)
 
+An other test with multiple spyObjects:
+[https://jsfiddle.net/eclectic_boy/9bnu3eop/](https://jsfiddle.net/eclectic_boy/9bnu3eop/)
+
+
 ##Notes
 
 The reference system is centered in the transform origin of the *spyObject* and the angles are measured clockwise starting from the North related to projections from the center.
@@ -36,22 +40,22 @@ $(function() {
 
 An optional options object `opts` can be passed to the widget. Here follow the available options:
 
-##`head`##
+###`head`
 The angle of the head of the *spyObject* (i.e. the part of the *spyObject* that will follow the cursor). Default to 0 (=top).
 
 [https://jsfiddle.net/eclectic_boy/y56o0hor/](https://jsfiddle.net/eclectic_boy/y56o0hor/).
 
-##`min`##
+###`min`
 The minimun angle (based on to the position of the cursor) below which the *spyObject* stops following the cursor. Default to `null`. `max` must be defined. Optional.
 
 [https://jsfiddle.net/eclectic_boy/cvz3mqjy/](https://jsfiddle.net/eclectic_boy/cvz3mqjy/).
 
-##`max`##
+###`max`
 The maximum angle (based on to the position of the cursor) above which the *spyObject* stops following the cursor. Default to `null`. `min` must be defined. Optional.
 
 [https://jsfiddle.net/eclectic_boy/cvz3mqjy/](https://jsfiddle.net/eclectic_boy/cvz3mqjy/).
 
-##`step(me, deg)`##
+###`step(me, deg)`
 A function which is called at every step (i.e. every time the *spyObject* moves). Optional.
 
 This function can change the behaviour of the widget for the current step by changing the related angle hence the movement of the *spyObject*.
@@ -81,14 +85,14 @@ deg_relative = deg + me.options.head;
 
 #Methods
 
-##`start`##
+###`start`
 
 enables the widget.
 ```
 $("#spy").cursorSpy("start");
 ```
 
-##`stop`##
+###`stop`
 
 disable the widget.
 ```
