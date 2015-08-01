@@ -53,23 +53,32 @@ The minimun angle (based on to the position of the cursor) below which the *spyO
 ###`max`
 The maximum angle (based on to the position of the cursor) above which the *spyObject* stops following the cursor. Default to `null`. `min` must be defined. Optional.
 
-[https://jsfiddle.net/eclectic_boy/cvz3mqjy/](https://jsfiddle.net/eclectic_boy/cvz3mqjy/).
+[https://jsfiddle.net/eclectic_boy/76qu4o51/](https://jsfiddle.net/eclectic_boy/76qu4o51/).
 
-###`step(me, deg)`
+###`rotationCenterX`
+The x coordinate of the rotation center for the *spyObject* relative to the object itself. It is the distance from the left border expressed in percentage of the width. Default to `50`. Optional.
+
+###`rotationCenterY`
+The y coordinate of the rotation center for the *spyObject* relative to the object itself. It is the distance from the top border expressed in percentage of the height. Default to `50`. Optional.
+
+[https://jsfiddle.net/eclectic_boy/6euwrn5t/](https://jsfiddle.net/eclectic_boy/6euwrn5t/).
+
+###`step(me, deg, distance)`
 A function which is called at every step (i.e. every time the *spyObject* moves). Optional.
 
 This function can change the behaviour of the widget for the current step by changing the related angle hence the movement of the *spyObject*.
 It receives the following parameters:
 
  - `me`: the widget itsel;
- - `deg`: the angle of the current step.
+ - `deg`: the angle of the current step;
+ - `distance`: the distance in pixels of the cursor from the transform origin.
 
 This function must return either a float number or `false`.
 If a float number is returned it will be used as the angle for the current step.
 If `false` is returned the movement for the current step is prevented.
 
 ```javascript
-function step(me, deg) {
+function step(me, deg, distance) {
 	//change deg here
 	return deg;
 }
