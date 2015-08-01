@@ -110,6 +110,12 @@ disable the widget.
 $("#spy").cursorSpy("stop");
 ```
 
-#Tips
+#Changelog
 
-The default transform origin for the *spyObject* is its centroid, for changing it you can use the CSS3 directive [`transform-origin`](http://www.w3schools.com/cssref/css3_pr_transform-origin.asp).
+###v1.1
+
+ - Debug of transform origin computation;
+ - Added options `rotationCenterX` and `rotationCenterY`.
+
+###v1.0
+First release
