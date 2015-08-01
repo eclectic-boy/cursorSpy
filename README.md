@@ -20,6 +20,11 @@ An other test with multiple spyObjects:
 The reference system is centered in the transform origin of the *spyObject* and the angles are measured clockwise starting from the North related to projections from the center.
 
 
+##Requirements
+
+ - [jQuery](https://jquery.com/);
+ - [jQuery UI](https://jqueryui.com/).
+
 #Usage
 
 ```html    
