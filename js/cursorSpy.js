@@ -34,7 +34,6 @@
 				.css("-ms-transform-origin", torigin)
 				.css("-webkit-transform-origin", torigin)
 				.css("transform-origin", torigin);
-			console.log(torigin);
 
 			//converts transform origin from % to px
 			var width = me.element.width();
