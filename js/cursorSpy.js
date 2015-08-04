@@ -25,8 +25,7 @@
 			var me = this;
 
 			me.element
-				.css("display", "block")
-				.css("position", "relative");
+				.css("display", "block");
 
 			//set transform origin
 			var torigin = me.options.rotationCenterX + "% " + me.options.rotationCenterY + "%";
