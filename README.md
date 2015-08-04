@@ -117,6 +117,10 @@ $("#spy").cursorSpy("stop");
 
 #Changelog
 
+###v1.2
+
+ - Bug fixing.
+
 ###v1.1
 
  - Debug of transform origin computation;
